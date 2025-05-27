@@ -10,7 +10,7 @@ Features:<br>
 -Deployed backend and frontend<br>
 
 Live Demo:<br>
-Frontend: https://task-management-dashboard-bg10n77g2.vercel.app<br>
+Frontend: task-management-dashboard-bg10n77g2.vercel.app<br>
 Backend: https://task-management-dashboard-6lh0.onrender.com/api/tasks<br>
 
 Tech Stack:<br>
