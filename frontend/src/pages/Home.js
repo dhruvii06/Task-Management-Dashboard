@@ -8,7 +8,7 @@ function Home() {
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/tasks');
+      const res = await axios.get('https://task-management-dashboard-6lh0.onrender.com/api/tasks');
       setTasks(res.data);
     } catch (err) {
       console.error('Error fetching tasks:', err);
@@ -21,7 +21,7 @@ function Home() {
 
   const handleAddTask = async (newTask) => {
     try {
-      await axios.post('http://localhost:5000/api/tasks', newTask);
+      await axios.post('https://task-management-dashboard-6lh0.onrender.com/api/tasks', newTask);
       fetchTasks();
     } catch (err) {
       console.error('Error adding task:', err);

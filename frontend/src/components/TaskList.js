@@ -3,7 +3,7 @@ import React from 'react';
 const TaskList = ({ tasks, onTasksUpdated }) => {
   // Toggle completion status
   const toggleComplete = async (task) => {
-    await fetch(`http://localhost:5000/api/tasks/${task._id}`, {
+    await fetch(`https://task-management-dashboard-6lh0.onrender.com/api/tasks/${task._id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ completed: !task.completed }),
@@ -13,7 +13,7 @@ const TaskList = ({ tasks, onTasksUpdated }) => {
 
   // Delete a task
   const deleteTask = async (id) => {
-    await fetch(`http://localhost:5000/api/tasks/${id}`, {
+    await fetch(`https://task-management-dashboard-6lh0.onrender.com/api/tasks/${id}`, {
       method: 'DELETE'
     });
     onTasksUpdated();
