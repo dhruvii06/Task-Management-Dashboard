@@ -1,4 +1,24 @@
+# Node dependencies
 node_modules/
-.env
-.DS_Store
+
+# Logs
 *.log
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Build output
+dist/
+build/
+
+# NPM cache
+.npm/
+.cache/
